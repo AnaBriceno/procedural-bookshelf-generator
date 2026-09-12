@@ -1,0 +1,42 @@
+# Blender temporary files & logs
+*.blend
+*.blend1
+*.blend2
+*.log
+*.tmp
+*.pyc
+__pycache__/
+
+# Root diagnostic renders & draft files
+diag_*.png
+mah_*.png
+oak_*.png
+scan_*.png
+teak_*.png
+wal_*.png
+walnut_*.png
+mahogany_*.png
+literal_*.png
+plinth_*.png
+procedural_bookshelf_v2.py
+
+# Scratch temporary tools, logs & cached binaries
+scratch/*
+!scratch/verify_final_visual_corrections.py
+!scratch/verify_final_audit_checks.py
+!scratch/test_addon_installation.py
+!scratch/measure_baseline_metrics.py
+
+# Workspace customization & docs
+.agents/
+docs/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE metadata
+.vs/
+.vscode/
+.idea/
