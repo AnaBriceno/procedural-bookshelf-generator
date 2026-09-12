@@ -138,4 +138,6 @@ procedural_bookshelf/
 
 ## License & Credits
 
-Developed by Antigravity Technical Art. Built for Blender 5.1+.
+Developed by Ana Briceno
+Technical Art · Procedural Systems · Blender · Python
+Built for Blender 5.1+.
