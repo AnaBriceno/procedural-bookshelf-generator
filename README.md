@@ -103,7 +103,7 @@ The system is structured into decoupled, single-responsibility operational layer
 ## Installation & Usage
 
 ### Option 1: Install Add-on ZIP Package (Recommended)
-1. Download [`procedural_bookshelf_v1.0.0.zip`](file:///e:/Claudio/procedural_bookshelf_v1.0.0.zip).
+1. Download [`procedural_bookshelf_v1.0.0.zip`](https://github.com/AnaBriceno/procedural-bookshelf-generator/releases/download/v1.0.0/procedural_bookshelf_v1.0.0.zip).
 2. Open Blender 5.1+ $\rightarrow$ `Edit` $\rightarrow$ `Preferences` $\rightarrow$ `Add-ons`.
 3. Click **Install...**, select `procedural_bookshelf_v1.0.0.zip`, and check the box to enable **Procedural Bookshelf Generator**.
 4. In the 3D Viewport, press `N` to open the Sidebar panel and select the **Procedural** tab.
@@ -117,27 +117,30 @@ Open `procedural_bookshelf.py` in Blender's Text Editor and click **Run Script**
 ## Repository Structure
 
 ```
-procedural_bookshelf/
-├── __init__.py / procedural_bookshelf.py  # Main Blender Add-on source code
-├── procedural_bookshelf_v1.0.0.zip       # Production distribution ZIP release
-├── README.md                              # Technical Art documentation
+procedural-bookshelf-generator/
+├── procedural_bookshelf.py            # Main Blender Add-on single-file source / module
+├── procedural_bookshelf_v1.0.0.zip       # Production distribution ZIP release package
+├── README.md                              # Technical Art & system documentation
 ├── .gitignore                             # Repository hygiene rules
 ├── assets/                                # Asset texture libraries
 │   └── textures/
 │       ├── art/                           # High-res photographic artwork
 │       ├── books/                         # Real photographic book covers/spines/pages
 │       └── wood/                          # Fine wood veneer textures (Oak, Walnut, Teak)
-└── scratch/                               # Automated QA verification scripts
-    ├── verify_final_visual_corrections.py
-    ├── verify_final_audit_checks.py
-    ├── test_addon_installation.py
-    └── measure_baseline_metrics.py
+├── scratch/                               # Automated QA verification scripts
+│   ├── verify_final_visual_corrections.py
+│   ├── verify_final_audit_checks.py
+│   ├── test_addon_installation.py
+│   └── measure_baseline_metrics.py
+└── tools/                                 # Build & release utilities
+    └── blender_gate.py
 ```
 
 ---
 
 ## License & Credits
 
-Developed by Ana Briceno
+Developed by **Ana Briceno**  
 Technical Art · Procedural Systems · Blender · Python
+
 Built for Blender 5.1+.

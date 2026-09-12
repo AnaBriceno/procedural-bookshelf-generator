@@ -1,6 +1,6 @@
 bl_info = {
     "name": "Procedural Bookshelf Generator",
-    "author": "Antigravity Technical Art",
+    "author": "Ana Briceno",
     "version": (1, 0, 0),
     "blender": (5, 1, 0),
     "location": "View3D > Sidebar > Procedural",
