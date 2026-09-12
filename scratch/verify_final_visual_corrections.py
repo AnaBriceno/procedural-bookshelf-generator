@@ -3,7 +3,7 @@ import os
 import bpy
 
 # Ensure addon root is in sys.path
-addon_dir = r"e:\Claudio"
+addon_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if addon_dir not in sys.path:
     sys.path.insert(0, addon_dir)
 

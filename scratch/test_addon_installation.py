@@ -8,7 +8,7 @@ print("==========================================================")
 print("TESTING ADD-ON ZIP INSTALLATION & EXECUTABLE QA")
 print("==========================================================")
 
-root_dir = r"e:\Claudio"
+root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 zip_path = os.path.join(root_dir, "procedural_bookshelf_v1.0.0.zip")
 
 assert os.path.exists(zip_path), f"ZIP path does not exist: {zip_path}"

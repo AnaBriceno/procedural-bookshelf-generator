@@ -4,7 +4,7 @@ import time
 import gc
 import bpy
 
-addon_dir = r"e:\Claudio"
+addon_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if addon_dir not in sys.path:
     sys.path.insert(0, addon_dir)
 
@@ -18,7 +18,7 @@ def measure_generation_baseline():
     # 1. Test clean factory scene regeneration
     bpy.ops.wm.read_factory_settings(use_empty=True)
     
-    out_file = r"e:\Claudio\scratch\baseline_results.txt"
+    out_file = os.path.join(addon_dir, "scratch", "baseline_results.txt")
     with open(out_file, "w", encoding="utf-8") as f:
         f.write("Starting baseline measurement...\n")
 
@@ -100,7 +100,7 @@ Total Polygons/Faces:      {total_faces:,}
     results_text += f"\nMean Regeneration Time: {sum(reg_times)/len(reg_times):.3f}s\n"
     results_text += "============================================================\n"
 
-    out_file = r"e:\Claudio\scratch\baseline_results.txt"
+    out_file = os.path.join(addon_dir, "scratch", "baseline_results.txt")
     with open(out_file, "w", encoding="utf-8") as f:
         f.write(results_text)
     print(f"Wrote baseline metrics to {out_file}", flush=True)
